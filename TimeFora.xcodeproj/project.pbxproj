@@ -9,14 +9,26 @@
 /* Begin PBXBuildFile section */
 		08E07ED028F48EE300868E4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E07ECF28F48EE300868E4A /* AppDelegate.swift */; };
 		08E07ED228F48EE300868E4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E07ED128F48EE300868E4A /* SceneDelegate.swift */; };
-		08E07ED428F48EE300868E4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E07ED328F48EE300868E4A /* ViewController.swift */; };
-		08E07ED728F48EE300868E4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E07ED528F48EE300868E4A /* Main.storyboard */; };
+		08E07ED428F48EE300868E4A /* PlayersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E07ED328F48EE300868E4A /* PlayersVC.swift */; };
 		08E07EDA28F48EE300868E4A /* TimeFora.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08E07ED828F48EE300868E4A /* TimeFora.xcdatamodeld */; };
 		08E07EDC28F48EE400868E4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E07EDB28F48EE400868E4A /* Assets.xcassets */; };
 		08E07EDF28F48EE400868E4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E07EDD28F48EE400868E4A /* LaunchScreen.storyboard */; };
 		08E07EEA28F48EE500868E4A /* TimeForaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E07EE928F48EE500868E4A /* TimeForaTests.swift */; };
 		08E07EF428F48EE500868E4A /* TimeForaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E07EF328F48EE500868E4A /* TimeForaUITests.swift */; };
 		08E07EF628F48EE500868E4A /* TimeForaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E07EF528F48EE500868E4A /* TimeForaUITestsLaunchTests.swift */; };
+		08E07F0628F491DD00868E4A /* PlayersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E07F0528F491DD00868E4A /* PlayersScreen.swift */; };
+		08E07F0C28F49EE900868E4A /* DataPlayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E07F0B28F49EE900868E4A /* DataPlayers.swift */; };
+		08E07F1328F554C100868E4A /* PlayersDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E07F1228F554C100868E4A /* PlayersDetailTableViewCell.swift */; };
+		08E07F1628F5604700868E4A /* ScalePlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E07F1528F5604700868E4A /* ScalePlayerVC.swift */; };
+		08E07F1A28F5B69F00868E4A /* ScalePlayerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E07F1928F5B69F00868E4A /* ScalePlayerScreen.swift */; };
+		08E07F2928F8DEE600868E4A /* LineUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E07F2828F8DEE600868E4A /* LineUpVC.swift */; };
+		08E07F2B28F9858400868E4A /* StatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E07F2A28F9858400868E4A /* StatusVC.swift */; };
+		08E07F3028F9A42700868E4A /* CardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E07F2F28F9A42700868E4A /* CardVC.swift */; };
+		08E07F3328F9A7C700868E4A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E07F3228F9A7C700868E4A /* API.swift */; };
+		08E07F3628F9A80900868E4A /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E07F3528F9A80900868E4A /* CalendarVC.swift */; };
+		08E07F7828FAFEAF00868E4A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E07F7728FAFEAF00868E4A /* Post.swift */; };
+		08E07F882900684500868E4A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 08E07F872900684500868E4A /* Lottie */; };
+		08E07F8A2900690900868E4A /* 57137-success-tick.json in Resources */ = {isa = PBXBuildFile; fileRef = 08E07F892900690900868E4A /* 57137-success-tick.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +52,7 @@
 		08E07ECC28F48EE300868E4A /* TimeFora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeFora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E07ECF28F48EE300868E4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08E07ED128F48EE300868E4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		08E07ED328F48EE300868E4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		08E07ED628F48EE300868E4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08E07ED328F48EE300868E4A /* PlayersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersVC.swift; sourceTree = "<group>"; };
 		08E07ED928F48EE300868E4A /* TimeFora.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeFora.xcdatamodel; sourceTree = "<group>"; };
 		08E07EDB28F48EE400868E4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08E07EDE28F48EE400868E4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +62,18 @@
 		08E07EEF28F48EE500868E4A /* TimeForaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeForaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E07EF328F48EE500868E4A /* TimeForaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeForaUITests.swift; sourceTree = "<group>"; };
 		08E07EF528F48EE500868E4A /* TimeForaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeForaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		08E07F0528F491DD00868E4A /* PlayersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersScreen.swift; sourceTree = "<group>"; };
+		08E07F0B28F49EE900868E4A /* DataPlayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPlayers.swift; sourceTree = "<group>"; };
+		08E07F1228F554C100868E4A /* PlayersDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersDetailTableViewCell.swift; sourceTree = "<group>"; };
+		08E07F1528F5604700868E4A /* ScalePlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalePlayerVC.swift; sourceTree = "<group>"; };
+		08E07F1928F5B69F00868E4A /* ScalePlayerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalePlayerScreen.swift; sourceTree = "<group>"; };
+		08E07F2828F8DEE600868E4A /* LineUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineUpVC.swift; sourceTree = "<group>"; };
+		08E07F2A28F9858400868E4A /* StatusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusVC.swift; sourceTree = "<group>"; };
+		08E07F2F28F9A42700868E4A /* CardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardVC.swift; sourceTree = "<group>"; };
+		08E07F3228F9A7C700868E4A /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		08E07F3528F9A80900868E4A /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
+		08E07F7728FAFEAF00868E4A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		08E07F892900690900868E4A /* 57137-success-tick.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "57137-success-tick.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E07F882900684500868E4A /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,13 +125,16 @@
 		08E07ECE28F48EE300868E4A /* TimeFora */ = {
 			isa = PBXGroup;
 			children = (
+				08E07F3128F9A7BB00868E4A /* API */,
+				08E07F1428F55FAE00868E4A /* ThirdMainScreen */,
+				08E07F1C28F83A4600868E4A /* Calender */,
+				08E07F0228F490AF00868E4A /* Home */,
 				08E07ECF28F48EE300868E4A /* AppDelegate.swift */,
 				08E07ED128F48EE300868E4A /* SceneDelegate.swift */,
-				08E07ED328F48EE300868E4A /* ViewController.swift */,
-				08E07ED528F48EE300868E4A /* Main.storyboard */,
 				08E07EDB28F48EE400868E4A /* Assets.xcassets */,
 				08E07EDD28F48EE400868E4A /* LaunchScreen.storyboard */,
 				08E07EE028F48EE400868E4A /* Info.plist */,
+				08E07F892900690900868E4A /* 57137-success-tick.json */,
 				08E07ED828F48EE300868E4A /* TimeFora.xcdatamodeld */,
 			);
 			path = TimeFora;
@@ -130,6 +157,190 @@
 			path = TimeForaUITests;
 			sourceTree = "<group>";
 		};
+		08E07F0228F490AF00868E4A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				08E07F0A28F49ED800868E4A /* Model */,
+				08E07F0728F499A000868E4A /* Cell */,
+				08E07F0428F490CA00868E4A /* Screen */,
+				08E07F0328F490C600868E4A /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		08E07F0328F490C600868E4A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				08E07ED328F48EE300868E4A /* PlayersVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		08E07F0428F490CA00868E4A /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				08E07F0528F491DD00868E4A /* PlayersScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		08E07F0728F499A000868E4A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				08E07F1228F554C100868E4A /* PlayersDetailTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		08E07F0A28F49ED800868E4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				08E07F0B28F49EE900868E4A /* DataPlayers.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		08E07F1428F55FAE00868E4A /* ThirdMainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				08E07F2528F83ADD00868E4A /* SegmentIndex */,
+				08E07F1828F5B67800868E4A /* Screen */,
+				08E07F1728F5B67200868E4A /* ViewController */,
+			);
+			path = ThirdMainScreen;
+			sourceTree = "<group>";
+		};
+		08E07F1728F5B67200868E4A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				08E07F1528F5604700868E4A /* ScalePlayerVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		08E07F1828F5B67800868E4A /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				08E07F1928F5B69F00868E4A /* ScalePlayerScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		08E07F1B28F6E55B00868E4A /* CardScreen */ = {
+			isa = PBXGroup;
+			children = (
+				08E07F2E28F9A12200868E4A /* ViewController */,
+			);
+			path = CardScreen;
+			sourceTree = "<group>";
+		};
+		08E07F1C28F83A4600868E4A /* Calender */ = {
+			isa = PBXGroup;
+			children = (
+				08E07F1E28F83A7C00868E4A /* Screen */,
+				08E07F1D28F83A7700868E4A /* ViewController */,
+			);
+			path = Calender;
+			sourceTree = "<group>";
+		};
+		08E07F1D28F83A7700868E4A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				08E07F3528F9A80900868E4A /* CalendarVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		08E07F1E28F83A7C00868E4A /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		08E07F1F28F83A8200868E4A /* LineUp */ = {
+			isa = PBXGroup;
+			children = (
+				08E07F2128F83A9B00868E4A /* Screen */,
+				08E07F2028F83A9700868E4A /* ViewController */,
+			);
+			path = LineUp;
+			sourceTree = "<group>";
+		};
+		08E07F2028F83A9700868E4A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				08E07F2828F8DEE600868E4A /* LineUpVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		08E07F2128F83A9B00868E4A /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		08E07F2228F83AA200868E4A /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				08E07F2428F83AAC00868E4A /* Screen */,
+				08E07F2328F83AA800868E4A /* ViewController */,
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
+		08E07F2328F83AA800868E4A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				08E07F2A28F9858400868E4A /* StatusVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		08E07F2428F83AAC00868E4A /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		08E07F2528F83ADD00868E4A /* SegmentIndex */ = {
+			isa = PBXGroup;
+			children = (
+				08E07F1B28F6E55B00868E4A /* CardScreen */,
+				08E07F2228F83AA200868E4A /* Status */,
+				08E07F1F28F83A8200868E4A /* LineUp */,
+			);
+			path = SegmentIndex;
+			sourceTree = "<group>";
+		};
+		08E07F2E28F9A12200868E4A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				08E07F2F28F9A42700868E4A /* CardVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		08E07F3128F9A7BB00868E4A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				08E07F7628FAFE9F00868E4A /* Model */,
+				08E07F3228F9A7C700868E4A /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		08E07F7628FAFE9F00868E4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				08E07F7728FAFEAF00868E4A /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,12 +351,16 @@
 				08E07EC828F48EE300868E4A /* Sources */,
 				08E07EC928F48EE300868E4A /* Frameworks */,
 				08E07ECA28F48EE300868E4A /* Resources */,
+				08E07F2C28F98B4100868E4A /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = TimeFora;
+			packageProductDependencies = (
+				08E07F872900684500868E4A /* Lottie */,
+			);
 			productName = TimeFora;
 			productReference = 08E07ECC28F48EE300868E4A /* TimeFora.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +433,9 @@
 				Base,
 			);
 			mainGroup = 08E07EC328F48EE300868E4A;
+			packageReferences = (
+				08E07F862900684500868E4A /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 08E07ECD28F48EE300868E4A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,8 +453,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				08E07EDF28F48EE400868E4A /* LaunchScreen.storyboard in Resources */,
+				08E07F8A2900690900868E4A /* 57137-success-tick.json in Resources */,
 				08E07EDC28F48EE400868E4A /* Assets.xcassets in Resources */,
-				08E07ED728F48EE300868E4A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,15 +474,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08E07F2C28F98B4100868E4A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		08E07EC828F48EE300868E4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E07F0C28F49EE900868E4A /* DataPlayers.swift in Sources */,
+				08E07F2B28F9858400868E4A /* StatusVC.swift in Sources */,
+				08E07F3028F9A42700868E4A /* CardVC.swift in Sources */,
+				08E07F2928F8DEE600868E4A /* LineUpVC.swift in Sources */,
+				08E07F7828FAFEAF00868E4A /* Post.swift in Sources */,
+				08E07F1328F554C100868E4A /* PlayersDetailTableViewCell.swift in Sources */,
 				08E07EDA28F48EE300868E4A /* TimeFora.xcdatamodeld in Sources */,
-				08E07ED428F48EE300868E4A /* ViewController.swift in Sources */,
+				08E07ED428F48EE300868E4A /* PlayersVC.swift in Sources */,
 				08E07ED028F48EE300868E4A /* AppDelegate.swift in Sources */,
+				08E07F3328F9A7C700868E4A /* API.swift in Sources */,
+				08E07F0628F491DD00868E4A /* PlayersScreen.swift in Sources */,
+				08E07F1A28F5B69F00868E4A /* ScalePlayerScreen.swift in Sources */,
 				08E07ED228F48EE300868E4A /* SceneDelegate.swift in Sources */,
+				08E07F3628F9A80900868E4A /* CalendarVC.swift in Sources */,
+				08E07F1628F5604700868E4A /* ScalePlayerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +551,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		08E07ED528F48EE300868E4A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				08E07ED628F48EE300868E4A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		08E07EDD28F48EE400868E4A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +688,6 @@
 				INFOPLIST_FILE = TimeFora/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -456,9 +697,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = viewcode.TimeFora;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -474,7 +718,6 @@
 				INFOPLIST_FILE = TimeFora/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -484,9 +727,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = viewcode.TimeFora;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -606,6 +852,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		08E07F862900684500868E4A /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		08E07F872900684500868E4A /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08E07F862900684500868E4A /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		08E07ED828F48EE300868E4A /* TimeFora.xcdatamodeld */ = {
