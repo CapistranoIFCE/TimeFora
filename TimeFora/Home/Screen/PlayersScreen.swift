@@ -114,9 +114,12 @@ class PlayersScreen: UIView {
         self.delegate?.actionLoginButton()
     }
     @objc func tappedRegisterButton() {
-        let personName = Person(context: self.context!)
-        personName.name = nameTextField.text
-        self.delegate?.actionRegisterButton(personName: personName.name ?? "")
+
+        if let items = try? self.context?.fetch(Person.fetchRequest()) {
+            let personName = Person(context: self.context!)
+            personName.name = nameTextField.text
+            personName.image = "shirt\(items.count+1)"
+        }
 
         do {
             try self.context!.save()

@@ -16,6 +16,7 @@ class PostCell: UITableViewCell {
         button.setTitleColor(.white, for: .normal)
         button.clipsToBounds = true
         button.layer.cornerRadius = 7.5
+        button.isUserInteractionEnabled = true
         button.backgroundColor = UIColor(red: 120/255, green: 26/255, blue: 208/255, alpha: 1.0)
         button.addTarget(self, action: #selector(self.tappedRegisterButton), for: .touchUpInside)
         return button
@@ -41,7 +42,7 @@ class PostCell: UITableViewCell {
         reuseIdentifier: String?
     ) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        //self.backgroundColor = .orange
+        self.backgroundColor = .orange
         configContraints()
     }
 
@@ -89,12 +90,10 @@ class CalendarVC: UIViewController {
     }
 
     lazy var tableView: UITableView = {
-        let tableView = UITableView()
+        let tableView = UITableView(frame: .zero, style: .plain)
         tableView.register(PostCell.self,
                            forCellReuseIdentifier: "cell")
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.dataSource = self
-        tableView.delegate = self
         return tableView
     }()
 
@@ -102,7 +101,8 @@ class CalendarVC: UIViewController {
         super.viewDidLoad()
         view.addSubview(tableView)
         self.tableView.backgroundColor = UIColor(red: 24/255, green: 177/255, blue: 104/255, alpha: 1.0)
-
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         setUpContraints()
     }
 
@@ -130,12 +130,14 @@ extension CalendarVC: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
         self.navigationController?.pushViewController(ScalePlayerVC(items: self.items), animated: true)
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? PostCell
         cell?.configCell(with: calendar[indexPath.row])
+        cell?.selectionStyle = .none
 
         return cell ?? UITableViewCell()
     }

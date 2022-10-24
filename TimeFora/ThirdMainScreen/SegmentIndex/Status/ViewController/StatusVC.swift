@@ -1,22 +1,15 @@
 import UIKit
 
 class StatusCell: UITableViewCell {
-
-    lazy var confirmButton: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Criar", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.clipsToBounds = true
-        button.layer.cornerRadius = 7.5
-        button.backgroundColor = UIColor(red: 120/255, green: 26/255, blue: 208/255, alpha: 1.0)
-        return button
-    }()
+    var person: String? = nil {
+        didSet {
+            self.customLabel.text = person ?? "empty"
+        }
+    }
 
     private let customLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "placeholder"
         return label
     }()
 
@@ -25,38 +18,29 @@ class StatusCell: UITableViewCell {
         stepper.minimumValue = 0
         stepper.maximumValue = 10
         stepper.value = 0
-        stepper.backgroundColor = .black
+        stepper.backgroundColor = .red
         return stepper
     }()
 
-    private func configContraints() {
-        self.addSubview(confirmButton)
-        self.addSubview(customLabel)
-        self.addSubview(stepper)
-    }
-
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        configContraints()
+        configHierarchy()
+        setUpContraints()
     }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-private func setUpContraints() {
+    private func configHierarchy() {
+        self.addSubview(customLabel)
+    }
+
+    private func setUpContraints() {
         NSLayoutConstraint.activate([
-
-            self.customLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 10),
-            self.customLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -70),
-            self.customLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 10),
-            self.customLabel.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -10),
-
-            self.confirmButton.topAnchor.constraint(equalTo: topAnchor, constant: 5),
-            self.confirmButton.leadingAnchor.constraint(equalTo: customLabel.trailingAnchor, constant: 10),
-            self.confirmButton.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -10)
-
-            ])
+            customLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            customLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+        ])
 
     }
 }
@@ -115,11 +99,11 @@ extension StatusVC: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: PlayersDetailTableViewCell? = tableView.dequeueReusableCell(
+        let cell: StatusCell? = tableView.dequeueReusableCell(
             withIdentifier: PlayersDetailTableViewCell.identifier,
             for: indexPath
-        ) as? PlayersDetailTableViewCell
-        cell?.setUpCell(data: self.items[indexPath.row])
+        ) as? StatusCell
+        cell?.person = self.items[indexPath.row].name
         return cell ?? UITableViewCell()
     }
 

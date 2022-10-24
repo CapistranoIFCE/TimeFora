@@ -40,10 +40,7 @@ class PlayersDetailTableViewCell: UITableViewCell {
     public func setUpCell(data: Person) {
         self.nameLabel.text = data.name
         if let image = data.image {
-
-            // modelar persistencia para conseguir gerar UIImage para o person que está armazenado no parametro data aqui
-        } else {
-            self.userImageView.image = UIImage(named: "shirt")
+            self.userImageView.image = UIImage(named: image)
         }
     }
 

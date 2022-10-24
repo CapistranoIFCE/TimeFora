@@ -7,16 +7,80 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "21BB004D-358C-467C-9905-0EB538D1E7F9"
+            uuid = "0B1A644D-5429-4920-81B0-5CA5E22BEA66"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TimeFora/Calender/ViewController/CalendarVC.swift"
+            filePath = "TimeFora/ThirdMainScreen/SegmentIndex/Status/ViewController/StatusVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "init(items:)"
+            startingLineNumber = "6"
+            endingLineNumber = "6"
+            landmarkName = "person"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4FA9ACF6-673A-4F70-B4A2-FF743F9E6217"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeFora/Home/Cell/PlayersDetailTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "setUpCell(data:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4FA9ACF6-673A-4F70-B4A2-FF743F9E6217 - 99793e2b016e9d57"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TimeFora.PlayersDetailTableViewCell.setUpCell(data: TimeFora.Person) -&gt; ()"
+                  moduleName = "TimeFora"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/davicapistrano/Documents/TimeFora/TimeFora/Home/Cell/PlayersDetailTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "4FA9ACF6-673A-4F70-B4A2-FF743F9E6217 - 99793e2b016e9d57"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TimeFora.PlayersDetailTableViewCell.setUpCell(data: TimeFora.Person) -&gt; ()"
+                  moduleName = "TimeFora"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/davicapistrano/Documents/TimeFora/TimeFora/Home/Cell/PlayersDetailTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "404">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F476561A-A41B-4727-8323-265EDA414891"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TimeFora/Home/Cell/PlayersDetailTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "setUpCell(data:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
